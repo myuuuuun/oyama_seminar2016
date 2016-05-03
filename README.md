@@ -9,7 +9,7 @@
 
 Notebooks
 
-* [An Introductory Example](/quantecon/An Introductory Example.ipynb)
+* [An Introductory Example](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/quantecon/An%20Introductory%20Example.ipynb)
 
 ### 課題
 
@@ -21,17 +21,20 @@ Notebooks
 
 Notebooks
 
-* An Introductory Example
+* [An Introductory Example](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/quantecon_py/An%20Introductory%20Example.ipynb)
 * Shortest Path
 
 ### oTree
+
+No contents yet.
 
 
 ## 参考文献
 
 * [Julia documentation](http://docs.julialang.org/en/release-0.4/manual/)
-* [Introducing Julia](https://en.wikibooks.org/wiki/Introducing_Julia/)
+* [Introducing Julia](https://en.wikibooks.org/wiki/Introducing_Julia)
 * [Learn Julia in ? minutes](https://learnxinyminutes.com/docs/julia/)
+* [Gadfly](http://dcjones.github.io/Gadfly.jl/)
 
 ## Links
 

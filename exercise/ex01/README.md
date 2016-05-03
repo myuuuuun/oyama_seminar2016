@@ -5,8 +5,7 @@
 
 ## 作ったもの
 
-* Notebook
-* julia file
+* [Notebook](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex01/Ex01.ipynb)
 
 
 ## 参考
