@@ -35,6 +35,7 @@ No contents yet.
 * [Introducing Julia](https://en.wikibooks.org/wiki/Introducing_Julia)
 * [Learn Julia in ? minutes](https://learnxinyminutes.com/docs/julia/)
 * [Gadfly](http://dcjones.github.io/Gadfly.jl/)
+* [PythonistaのためのJulia100問100答](http://bicycle1885.hatenablog.com/entry/2014/12/23/170745)
 
 ## Links
 
