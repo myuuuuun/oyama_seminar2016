@@ -27,3 +27,4 @@ println(myinterp(1.5))
 * [Introducing Julia/Arrays and tuples](https://en.wikibooks.org/wiki/Introducing_Julia/Arrays_and_tuples) - Julia wiki
 * [Learn Julia in ? minutes](https://learnxinyminutes.com/docs/julia/)
 * [Gadfly](http://dcjones.github.io/Gadfly.jl/)
+* [Map, Filter, Reduce in Julia](https://mmstickman.wordpress.com/2015/01/30/map-filter-and-reduce-in-julia/)
