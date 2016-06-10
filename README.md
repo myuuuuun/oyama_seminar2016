@@ -14,6 +14,7 @@ Notebooks
 ### 課題
 
 * [Exercise1 - 線形補間](/exercise/ex01)
+* [Exercise2 - Deffered Acceptance](/exercise/ex02)
 
 ## サブゼミ
 
