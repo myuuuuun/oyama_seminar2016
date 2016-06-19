@@ -6,7 +6,7 @@
 # Released under the MIT license.
 
 
-module Ex01
+module GaleShapley
 
 immutable LinInterp
     grid::Array
