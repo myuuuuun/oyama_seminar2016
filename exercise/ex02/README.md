@@ -6,6 +6,8 @@ Deferred Acceptance Algorithmを実行するコードを書く.
 ## 作ったもの
 
 * [Notebook - 1to1の場合](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex02/Ex02.ipynb)
+* [Demo - 1to1](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex02/ex02_demo.ipynb)
+* [Library](https://github.com/myuuuuun/oyama_seminar2016/blob/master/exercise/ex02/matching.jl)
 
 
 ## 参考

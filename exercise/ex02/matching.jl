@@ -156,17 +156,19 @@ function gale_shapley_T{T<:Int}(m_prefs::AbstractArray{T, 2}, f_prefs::AbstractA
     return gale_shapley(m_prefs_T, f_prefs_T)
 end
 
-function is_stable_matching{T<:Int}(
+function is_valid_matching{T<:Int}(
+    #= 男女それぞれがunacceptableな相手とmatchingしてないかチェック
+    =#
+
     m_matched::AbstractVector{T}, f_matched::AbstractVector{T},
     m_prefs::AbstractArray{T, 2}, f_prefs::AbstractArray{T, 2},
     print_blocking::Bool=true)
-    
+
     m_size = size(m_prefs, 1)
     f_size = size(f_prefs, 1)
-
     f_rankings = argsort(m_prefs)
     m_rankings = argsort(f_prefs)
-
+    
     for m in 1:m_size
         if f_rankings[m, 1] < f_rankings[m, m_matched[m]+1]
             if print_blocking
@@ -175,7 +177,36 @@ function is_stable_matching{T<:Int}(
             end
             return false
         end
+    end
 
+    for f in 1:f_size
+        if m_rankings[f, 1] < m_rankings[f, f_matched[f]+1]
+            if print_blocking
+                println("Invalid matchings")
+                println("For woman: $(f), staying alone is better than matching with man: $(f_matched[f]).")
+            end
+            return false
+        end
+    end
+
+    return true
+end
+
+function is_stable_matching{T<:Int}(
+    m_matched::AbstractVector{T}, f_matched::AbstractVector{T},
+    m_prefs::AbstractArray{T, 2}, f_prefs::AbstractArray{T, 2},
+    print_blocking::Bool=true)
+    
+    m_size = size(m_prefs, 1)
+    f_size = size(f_prefs, 1)
+    f_rankings = argsort(m_prefs)
+    m_rankings = argsort(f_prefs)
+
+    if !is_valid_matching(m_matched, f_matched, m_prefs, f_prefs, print_blocking)
+        return false
+    end
+
+    for m in 1:m_size
         for i in 1:f_size
             f = m_prefs[m, i]
 
@@ -247,7 +278,3 @@ end
 
 
 end # end module
-
-
-
-
