@@ -1,13 +1,13 @@
-# Exercise2
+# Exercise3
 
 Deferred Acceptance Algorithmを実行するコードを書く.  
 詳細: [https://github.com/OyamaZemi/exercises2016/tree/master/ex02](https://github.com/OyamaZemi/exercises2016/tree/master/ex02)
 
 ## 作ったもの
 
-* [Notebook - 1to1の場合](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex02/Ex02.ipynb)
-* [Demo - 1to1](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex02/ex02_demo.ipynb)
-* [Library](https://github.com/myuuuuun/oyama_seminar2016/blob/master/exercise/ex02/matching.jl)
+* [Notebook - 1to1の場合](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex03/Ex03.ipynb)
+* [Demo - 1to1](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex03/ex03_demo.ipynb)
+* [Library](https://github.com/myuuuuun/oyama_seminar2016/blob/master/exercise/ex03/matching.jl)
 
 
 ## 参考
