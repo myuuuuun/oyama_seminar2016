@@ -1,12 +1,12 @@
 # Exercise3
 
-Deferred Acceptance Algorithmを実行するコードを書く.  
-詳細: [https://github.com/OyamaZemi/exercises2016/tree/master/ex02](https://github.com/OyamaZemi/exercises2016/tree/master/ex02)
+Deferred Acceptance Algorithmを実行するコードを書く(many to one)  
+詳細: [https://github.com/OyamaZemi/exercises2016/tree/master/ex03](https://github.com/OyamaZemi/exercises2016/tree/master/ex03)
 
 ## 作ったもの
 
-* [Notebook - 1to1の場合](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex03/Ex03.ipynb)
-* [Demo - 1to1](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex03/ex03_demo.ipynb)
+* [Notebook - many to 1の場合](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex03/Ex03.ipynb)
+* [Demo - many to 1](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex03/ex03_demo.ipynb)
 * [Library](https://github.com/myuuuuun/oyama_seminar2016/blob/master/exercise/ex03/matching.jl)
 
 
