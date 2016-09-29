@@ -6,7 +6,7 @@
 # Released under the MIT license.
 
 
-module GaleShapley
+module LinearInterpolation
 
 immutable LinInterp
     grid::Array
