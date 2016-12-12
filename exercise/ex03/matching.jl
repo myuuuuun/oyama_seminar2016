@@ -136,8 +136,12 @@ function gale_shapley{T<:Integer}(
             if resp == 0
                 break
             end
+
+            println(prop, ",", resp)
             
             worst = resp_worst_matched[resp]
+
+            println("worst: ", worst)
             # 大学が定員に達していない場合, 大学にとって受験者がacceptableならマッチ
             if n_props[resp] < caps[resp]
                 if prop_rankings[resp, prop+1] < prop_rankings[resp, 1]
