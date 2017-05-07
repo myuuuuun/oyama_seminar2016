@@ -1,6 +1,8 @@
 #-*- encoding: utf-8 -*-
 # linear interpolation
 # more info: https://github.com/myuuuuun/oyama_seminar2016/tree/master/exercise/ex01
+#
+# last update: 2017/5/6, supporting julia v0.5
 # 
 # Copyright (c) 2016 @myuuuuun
 # Released under the MIT license.
@@ -13,7 +15,7 @@ immutable LinInterp
     vals::Array
 end
 
-function Base.call(points::LinInterp, x::Real)
+function (points::LinInterp)(x::Real)
     grid = points.grid; vals = points.vals
     lower_index = searchsortedlast(points.grid, x)
 
@@ -30,18 +32,6 @@ function Base.call(points::LinInterp, x::Real)
     iterp_val = vals[lower_index] + (val_step / grid_step) * (x - grid[lower_index])
 
     return iterp_val
-end
-
-function Base.call{T<:Real}(points::LinInterp, x_array::Vector{T})
-    grid = points.grid; vals = points.vals
-    size = length(grid)
-    interp_vals = Array(T, size)
-    
-    for (i, x) in zip(1:size, x_array)
-        interp_vals[i] = points(x)
-    end
-
-    return interp_vals
 end
 
 end
