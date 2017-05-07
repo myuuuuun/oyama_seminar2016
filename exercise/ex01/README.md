@@ -1,22 +1,23 @@
 # Exercise1
 
 線形補間をするコードを書く.  
-詳細: [https://github.com/OyamaZemi/exercises2016/tree/master/ex01](https://github.com/OyamaZemi/exercises2016/tree/master/ex01)
+詳細: [https://github.com/OyamaZemi/exercises2017/tree/master/ex01](https://github.com/OyamaZemi/exercises2017/tree/master/ex01)
 
 ## 作ったもの
 
-* [Notebook](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex01/Ex01.ipynb)
-* [Julia file（モジュール化済）](/exercise/ex01/ex01.jl)
+* [Demo](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex01/ex01_demo.ipynb)
+* [Package](https://github.com/myuuuuun/MInterpolations)
 
 ## モジュールのインポート方法
 
 exp(x)を線形補間して, exp(1.5)を求める例
 
 ```
-include("ex01.jl")
+Pkg.clone("https://github.com/myuuuuun/MInterpolations.jl")
+using MInterpolations
 grid = linspace(0, 10, 11)
 val = exp(grid)
-myinterp = Ex01.LinInterp(grid, val)
+myinterp = MInterpolations.LinInterp(grid, val)
 println(myinterp(1.5))
 ```
 
